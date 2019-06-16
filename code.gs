@@ -12,7 +12,8 @@ function getSlackUser() {
       
   // アクティブなシート取得
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-      
+  
+  // 作成したトークンを入れる
   var accessToken = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
   var slackURLBase = "https://slack.com/api"
   var slackUserListAPI = slackURLBase + "/users.list?token=" + accessToken
